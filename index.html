@@ -11,8 +11,20 @@
     <form action="">
         <input type="number" name="numero" id="num1"><br>
         <input type="number" name="numero" id="num2"><br>
-        <span id="resultado">Resultado</span><br>
-        <button type="button" onclick="calculo()">Hacer suma</button>
+        <select id="operacion">
+            <option value='suma'>Sumar</option>
+            <option value='resta'>Resta</option>
+            <option value='multiplicacion'>Multiplicación</option>
+            <option value='division'>División</option>
+        </select><br>
+        <span id="resultado"> </span><br>
+        <button type="button" onclick="calculo()">Hacer operación</button>
+    </form>
+    <h2>Segundo ejercicio</h2>
+    <form>
+        <input type="radio" name="eleccion" value="opcion1" id="opcion1" onclick="muestraOpcion()">Opcion 1 <br>
+        <input type="radio" name="eleccion" value="opcion2" id="opcion2" onclick="muestraOpcion()">Opcion 2 <br>
+        <input type="radio" name="eleccion" value="opcion3" id="opcion3" onclick="muestraOpcion()">Opcion 3 <br>
     </form>
     <script src="javascript/metodos.js"></script>
 </body>
