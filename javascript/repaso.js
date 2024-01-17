@@ -36,6 +36,7 @@ cajaImprimir.innerHTML = `<h2>Variable caja imprimir</h2>
                           <p>Su edad es: ${edad}</p>`;
 //Así es como mandamos valores de variables al doc.
 //Ciclos if, while, for, do while, switch, igual a C# o Java.
+/*
 if(edad <= 45){
     cajaImprimir.innerHTML += `<p style"color: red">Eres muy joven aún</p>`
     //si dejamos con el valor = despues del inner nos va a borrar el primer inner que hicimos. Mejor += para concatenar
@@ -43,8 +44,12 @@ if(edad <= 45){
     cajaImprimir.innerHTML += `<p style = "color: red">Vamos por ese retiro con pención</p>`
 
 }
+*/
 //Solo ver estructura. Recorremos con for(var i = 0; i <= 100; i++)
-cajaImprimir.innerHTML += `<h2>Ciclo sencillo</h2>`
+/*
+cajaImprimir.innerHTML += `<h2>Ciclo sencillo</h2>`;
+cajaImprimir.innerHTML += `<h4>Ciclo for</h4>`;
 for(var i = 0; i <= 100; i++){
     cajaImprimir.innerHTML += `<span>Esta es la iteración ${i}</span><br>`
-}                           
+}
+*/                           
