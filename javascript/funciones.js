@@ -35,12 +35,27 @@ console.log('Productos del array: ' + Productos);
 //Vamos a llamar por posición en el array. Por ejemplo, quiero la SWITCH.
 //document.write(Productos[4]);
 //Recorremos arreglo.
+/*
 for(let i = 0; i < Productos.length; i++){
     document.write(Productos[i], `<br>`);
 }
+*/
 //También se puede con forech.
+/*
 Productos.forEach(function(producto){
     console.log('Dentro del forech',producto);
+    document.write(producto, `<br>`);
+    //Esto solo pasamos la informacion dentro de la función.
 })
+*/
 
 
+//La diferencia es que forEach es que es un método que itera solamente sobre los elementos que contiene un array. 
+//En el caso de for of, este iteraba sobre otro tipo de objetos que no sean necesariamente arrays sobre las propiedades del mismo. 
+//También con esto puedes iterar por cada caracter de un string
+
+//Las fuciones de flecha
+Productos.forEach((producto) => {
+    console.log('Dentro del forech',producto);
+    document.write(producto, `<br>`);
+})
