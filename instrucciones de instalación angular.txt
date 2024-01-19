@@ -1,0 +1,14 @@
+1. Es necesario tener instalado Node.js para intalar angular (ya que ocupa comandos NPM). Ir a está liga para instalar Node: https://nodejs.org/en
+
+2. Una vez instalado ejecutar el siguiente comando en la terminal como administrador: npm install -g @angular/cli
+
+3. Con eso nos va a instalar angular. Tenemos que habilitar el plugin, ejecutar en la consoal el siguiente comando (también como admin): Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+4. Reiniciar el equipo.
+
+5. Hacer la instalación de un proyecto angular en una carpeta con el siguiente comando: ng new my-app
+
+6. Correr la app: cd my-app
+                  ng serve --open
+
+7. Para más detalles ver el siguiente link: https://angular.io/guide/setup-local
