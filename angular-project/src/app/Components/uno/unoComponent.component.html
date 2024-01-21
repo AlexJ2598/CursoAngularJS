@@ -7,8 +7,17 @@
 </head>
 <body>
     <h1>{{titulo}}</h1>
-    <p>Este es un parrafo</p>
-    <p>Lo mandamos a llamar desde el componente uno.component</p>
-<hr>
+    <label for="nombreProducto">Nombre del Producto</label>
+    <input 
+    type="text" 
+    name="nombreProducto" 
+    id="nombreProducto" 
+    [(ngModel)]="nombreProducto"
+    />
+    <hr>
+    <!--Al añadir aquí el componente 2 ahora el componente dos es hijo del componente 1 -->
+    <!--Al llamar al componente 1 en el app.comp.html también llamamos al 2-->
+    <!--En dos.component.ts recibimos por un input, le pasamos nombre más el valor que va a tomar, en esta caso de nombreProducto-->
+    <dosComponent [nombre]="nombreProducto"></dosComponent>
 </body>
 </html>

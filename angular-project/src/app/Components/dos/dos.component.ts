@@ -1,4 +1,5 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
+//Ponemos declarador de Input para indicar que vamos a recibir datos.
 
 @Component({
     selector: "dosComponent",
@@ -7,7 +8,8 @@ import { Component } from "@angular/core";
 })
 
 export class DosComponent{
-    nombre: string;
+    //@Input para indicar que vamos a recibir las variables
+    @Input() nombre: string;
     precio: number;
     marca: string;
     status: boolean;
