@@ -20,14 +20,14 @@ export class UnoComponent{
     public titulo:string;
     //Hacemos un databin desde TS hacia HTML. Ver uno.Component.html
     //Un constructor sirve para inicializar nuestro componente
-    public nombreProducto:string;
+    //Vamos a mandar info al hijo.
+    public nombreProducto:string; //Nombre de la variable en el input del HTML. [(ngModel)]="nombreProducto
     //Tenemos que indicar que vamos a trabajar con un nuevo modulo en app.module
     constructor(){
         this.titulo = 'Mis tiendas'; //Inicializamos los valores
-        this.nombreProducto ='Producto';
+        this.nombreProducto ='Producto'; //Tenmos que inicializarlo para que no de error.
     }
     //Oriendato a objetos como JAVA y C#
-    //Vamos a mandar info al hijo.
 
 }
 //Para poder usarlo es necesario ir a ver el archivo AppModule para indicarlo.
