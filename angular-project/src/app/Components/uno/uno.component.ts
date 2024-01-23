@@ -23,11 +23,19 @@ export class UnoComponent{
     //Vamos a mandar info al hijo.
     public nombreProducto:string; //Nombre de la variable en el input del HTML. [(ngModel)]="nombreProducto
     //Tenemos que indicar que vamos a trabajar con un nuevo modulo en app.module
+
+    //Ahora necesitamos una variable para el output.
+    public datosDelHijo:any;
     constructor(){
         this.titulo = 'Mis tiendas'; //Inicializamos los valores
         this.nombreProducto ='Producto'; //Tenmos que inicializarlo para que no de error.
     }
     //Oriendato a objetos como JAVA y C#
+    //Funcion para la conexión.
+    verDatosDos(event: any){
+        console.log('Event: ', event);
+        this.datosDelHijo = event;
+    }
 
 }
 //Para poder usarlo es necesario ir a ver el archivo AppModule para indicarlo.
